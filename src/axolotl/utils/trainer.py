@@ -267,7 +267,7 @@ def setup_fsdp_envs(cfg):
         ] = cfg.fsdp_config.fsdp_transformer_layer_cls_to_wrap
 
 
-def setup_trainer(cfg, train_dataset, eval_dataset, model, tokenizer, total_num_steps):
+def prepare_optim_env(cfg):
     if cfg.fsdp:
         setup_fsdp_envs(cfg)
     elif cfg.deepspeed:
