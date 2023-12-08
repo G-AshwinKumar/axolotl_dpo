@@ -796,7 +796,7 @@ class HFDPOTrainerBuilder(TrainerBuilderBase):
             dataloader_num_workers=8,
             dataloader_pin_memory=True,
             save_total_limit=self.cfg.save_total_limit or 5,
-            hub_model_id=self.hub_model_id,
+            hub_model_id=self.cfg.hub_model_id,
         )
         dpo_trainer = DPOTrainer(
             self.model,
