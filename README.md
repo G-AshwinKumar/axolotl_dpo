@@ -1,3 +1,6 @@
+## Note:
+This originates from the rl-trainer branch on axolotl repo and merges it with main to fix flash attention issues. Use this branch this till dpo support is officially added to axolotl main.
+
 # Axolotl
 
 Axolotl is a tool designed to streamline the fine-tuning of various AI models, offering support for multiple configurations and architectures.
