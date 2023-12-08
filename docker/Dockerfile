@@ -14,7 +14,8 @@ RUN apt-get update && \
 
 WORKDIR /workspace
 
-RUN git clone --depth=1 https://github.com/OpenAccess-AI-Collective/axolotl.git
+# Copy the local axolotl source into the image
+COPY ./axolotl /workspace/axolotl
 
 WORKDIR /workspace/axolotl
 
